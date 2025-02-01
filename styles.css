@@ -1,0 +1,248 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2e8b57;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .logo img {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .site-name {
+    font-size: 50px;
+    font-weight: bold;
+    
+  }
+  
+  .auth-buttons .button {
+    background: white;
+    color: #2e8b57;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .auth-buttons .button:hover {
+    background: #2e8b57;
+    color: white;
+  }
+
+  .button {
+    background: #2e8b57; /* A rich green color */
+    color: white; /* White text for high contrast */
+    padding: 10px 20px;
+    border: none; /* Removes any default border */
+    border-radius: 5px; /* Rounded corners for a modern look */
+    font-size: 16px; /* Comfortable font size */
+    cursor: pointer; /* Pointer cursor to indicate interactivity */
+    transition: background 0.3s, transform 0.3s; /* Smooth transitions for hover effects */
+}
+
+  /* Proceed Button (Hover State) */
+  .button:hover {
+      background: #267347; /* A slightly darker green for hover effect */
+      transform: scale(1.05); /* Slight zoom-in effect */
+  }
+  
+  .background {
+    background: url('bg3.jpg') no-repeat center center/cover;
+    height: calc(100vh - 120px); /* Account for header/footer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .real-time-data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    /* background: rgba(255, 255, 255, 0.8); */
+    border-radius: 10px;
+  }
+  
+  .data-item {
+    text-align: center;
+    padding: 15px;
+    /* background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .data-item h3 {
+    color: #2e8b57;
+    margin-bottom: 10px;
+  }
+  
+  .data-item p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  footer {
+    background-color: #2E8B57; /* Dark Green */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 15px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section a {
+    color: #FFD700; /* Golden Yellow */
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #FFFFFF; /* White on hover */
+    text-decoration: underline;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section input {
+    padding: 8px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.footer-section button {
+    background-color: #FFD700; /* Golden Yellow */
+    color: #2E8B57; /* Dark Green */
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer-section button:hover {
+    background-color: #FFFFFF;
+    color: #2E8B57;
+}
+
+.footer-note {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+  
+  .data-item img{
+    height: 100px;
+    width: 100px;
+  }
+
+  /* Form Container */
+.form-container {
+  background: rgba(255, 255, 255, 0.9); /* Light, semi-transparent white */
+  padding: 20px; /* Space inside the box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  width: 350px; /* Fixed width for the box */
+  text-align: center; /* Center-aligns the content */
+}
+
+/* Form Heading */
+.form-container h2 {
+  margin-bottom: 20px; /* Space below the heading */
+  color: #2e8b57; /* Green text color */
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column; /* Aligns inputs vertically */
+  align-items: center; /* Centers inputs horizontally */
+  width: 100%; /* Allows flexibility inside the container */
+}
+
+/* Input Fields */
+form input {
+  width: 90%; /* Wide input fields with some margin on the sides */
+  max-width: 400px; /* Sets a maximum width for larger screens */
+  padding: 10px 15px; /* Adds space inside the input box for better usability */
+  margin: 10px 0; /* Adds spacing between input fields */
+  border: 1px solid #ccc; /* Subtle border for definition */
+  border-radius: 5px; /* Rounded corners for a clean look */
+  font-size: 16px; /* Comfortable font size for text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for depth */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions for focus effect */
+}
+
+/* Focus State for Input Fields */
+form input:focus {
+  border-color: #2e8b57; /* Green border on focus */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for focus */
+  outline: none; /* Removes default focus outline */
+}
+
+/* Form Layout */
+form br {
+  display: none; /* Hides <br/> elements as the flexbox handles spacing */
+}
+
+.sign{
+  font-size: 35px;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}

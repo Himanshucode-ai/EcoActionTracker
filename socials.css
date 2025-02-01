@@ -1,0 +1,124 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
+}
+
+/* ---- HEADER ---- */
+.header {
+    background: #2E8B57; /* Green Background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header span {
+    color: #FFD700; /* Golden Highlight */
+}
+
+/* ---- MAIN CONTENT ---- */
+.social-links {
+    margin: 40px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.social-links p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Social Media Buttons */
+.social-item {
+    margin: 15px 0;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+    text-decoration: none;
+    color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Icons */
+.social-item img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Individual Social Buttons */
+.instagram {
+    background-color: #E4405F;
+}
+
+.twitter {
+    background-color: #1DA1F2;
+}
+
+.youtube {
+    background-color: #FF0000;
+}
+
+.github {
+    background-color: #333;
+}
+
+.email {
+    background-color: #FFD700;
+    color: #2E8B57;
+}
+
+/* Hover Effect */
+.social-item:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* ---- FOOTER ---- */
+.footer {
+    background: #2E8B57;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 16px;
+    position: relative;
+}
+
+.footer a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright Text */
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}

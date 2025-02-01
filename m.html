@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAction Tracker</title>
+    <link rel="stylesheet" href="m.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="user-container">
+            <img class="avatar" id="avatar" src="default-avatar.png" alt="User Avatar">
+            <span class="user-name" id="user-name">Guest User</span>
+        </div>
+        <div class="points-container">
+            <span class="points-label">Total Points:</span>
+            <span class="points-value" id="total-points">0</span>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Tree Section -->
+        <div class="section">
+            <h2>Tree</h2>
+            <div class="task-container">
+                <div class="task-box" style="background-image: url('plant_logo.jpg')">
+                    <div class="task-title">Plant a Tree</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+                <div class="task-box" style="background-image: url('plant_logo.jpg')">
+                    <div class="task-title">Water a Tree</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+                <div class="task-box" style="background-image: url('plant_logo.jpg')">
+                    <div class="task-title">Start a Tree Drive</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+                <div class="task-box" style="background-image: url('plant_logo.jpg')">
+                    <div class="task-title">Volunteer for Reforestation</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+                <div class="task-box" style="background-image: url('plant_logo.jpg')">
+                    <div class="task-title">Save Urban Forests</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+                <div class="task-box" style="background-image: url('plant_logo.jpg')">
+                    <div class="task-title">Adopt a Tree</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Water Section -->
+        <div class="section">
+            <h2>Water</h2>
+            <div class="task-container">
+                <div class="task-box" style="background-image: url('savewater_logo.jpg')">
+                    <div class="task-title">Fix a Leaky Faucet</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+                <div class="task-box" style="background-image: url('savewater_logo.jpg')">
+                    <div class="task-title">Install Rainwater Harvesting</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+                <div class="task-box" style="background-image: url('savewater_logo.jpg')">
+                    <div class="task-title">Reduce Shower Time</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+                <div class="task-box" style="background-image: url('savewater_logo.jpg')">
+                    <div class="task-title">Collect Greywater for Plants</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+                <div class="task-box" style="background-image: url('savewater_logo.jpg')">
+                    <div class="task-title">Use Reusable Water Bottles</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+                <div class="task-box" style="background-image: url('savewater_logo.jpg')">
+                    <div class="task-title">Participate in River Cleanup</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Plastic Section -->
+        <div class="section">
+            <h2>Plastic</h2>
+            <div class="task-container">
+                <div class="task-box" style="background-image: url('plastic_logo_.png')">
+                    <div class="task-title">Avoid Single-Use Plastic</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+                <div class="task-box" style="background-image: url('plastic_logo_.png')">
+                    <div class="task-title">Use Cloth Bags</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+                <div class="task-box" style="background-image: url('plastic_logo_.png')">
+                    <div class="task-title">Organize Plastic Drives</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+                <div class="task-box" style="background-image: url('plastic_logo_.png')">
+                    <div class="task-title">Recycle E-Waste</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+                <div class="task-box" style="background-image: url('plastic_logo_.png')">
+                    <div class="task-title">Use Compostable Products</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+                <div class="task-box" style="background-image: url('plastic_logo_.png')">
+                    <div class="task-title">Participate in Plastic Recycling</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CO2 Section -->
+        <div class="section">
+            <h2>CO2</h2>
+            <div class="task-container">
+                <div class="task-box" style="background-image: url('co2_logo.jpg')">
+                    <div class="task-title">Cycle to Work</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+                <div class="task-box" style="background-image: url('co2_logo.jpg')">
+                    <div class="task-title">Use Public Transport</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+                <div class="task-box" style="background-image: url('co2_logo.jpg')">
+                    <div class="task-title">Switch to LED Lights</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+                <div class="task-box" style="background-image: url('co2_logo.jpg')">
+                    <div class="task-title">Avoid Plastic Packaging</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+                <div class="task-box" style="background-image: url('co2_logo.jpg')">
+                    <div class="task-title">Plant Indoor Plants</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+                <div class="task-box" style="background-image: url('Co2_logo.jpg')">
+                    <div class="task-title">Conserve Electricity</div>
+                    <button class="btn start-btn" onclick="startChallenge(this)">Take Challenge</button>
+                    <button class="btn complete-btn" onclick="completeTask(this)"
+                        style="display: none;">Completed</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+          
+          <!-- Contact Section -->
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><a href="mailto:ecoactiontracker53@gmail.com">Email Us</a></li>
+              <li><a href="socials.html">Follow Us</a></li>
+            </ul>
+          </div>
+      
+          <!-- Quick Links Section -->
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="help.html">Help & FAQ</a></li>
+              <li><a href="privacy_policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+      
+          <!-- Newsletter Section -->
+          <div class="footer-section">
+            <h3>Stay Updated</h3>
+            <p>Join our mailing list for eco-friendly tips & updates!</p>
+            <form action="#" method="post">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+      
+        </div>
+      
+        <div class="footer-note">
+          <p>&copy; 2025 EcoActionTracker | All rights reserved.</p>
+        </div>
+      </footer>
+
+    <script>
+        // Load user details dynamically
+        window.onload = () => {
+            const user = JSON.parse(localStorage.getItem('ecoaction-user')) || {
+                name: 'Guest User',
+                avatar: 'default-avatar.png',
+            };
+
+            const avatarEl = document.getElementById('avatar');
+            const userNameEl = document.getElementById('user-name');
+
+            // Update avatar and user name in header
+            avatarEl.src = user.avatar;
+            userNameEl.textContent = `Hello, ${user.name.toUpperCase()}`; // Capitalize username
+
+            // Add functionality to update avatar on click
+            avatarEl.addEventListener('click', () => {
+                const newAvatar = prompt('Enter the path to your new avatar image:');
+                if (newAvatar) {
+                    if (confirm('Are you sure you want to update your avatar?')) {
+                        avatarEl.src = newAvatar;
+                        user.avatar = newAvatar;
+                        localStorage.setItem('ecoaction-user', JSON.stringify(user));
+                    }
+                }
+            });
+        };
+
+        function startChallenge(button) {
+            button.style.display = "none"; // Hide the "Take Challenge" button
+            const completeBtn = button.nextElementSibling;
+            completeBtn.style.display = "inline-block"; // Show the "Completed" button
+            alert("Challenge started! Good luck!");
+        }
+
+        function completeTask(button) {
+            const totalPointsEl = document.getElementById("total-points");
+            const currentPoints = parseInt(totalPointsEl.textContent, 10);
+            const newPoints = currentPoints + 50; // Add points (customize value)
+
+            // Update points in the UI
+            totalPointsEl.textContent = newPoints;
+
+            // Disable the button and change its text
+            button.disabled = true;
+            button.textContent = "Task Completed";
+
+            // Provide feedback to the user
+            alert(`Congratulations! You earned 50 points. Your new total is ${newPoints} points.`);
+        }
+    </script>
+
+</body>
+
+</html>
